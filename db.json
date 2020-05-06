@@ -23,6 +23,18 @@
       "Title": "Baked Chicken",
       "Poster": "https://i.pinimg.com/564x/57/e3/26/57e326ea7fcb1b9459ca6425e7daf679.jpg",
       "height": "4x"
+    },
+    {
+      "id": 5,
+      "Title": "Insult like Shakespeare",
+      "Poster": "https://i.pinimg.com/564x/ca/34/9c/ca349cd01e8fb4890f8f922d829655d0.jpg",
+      "height": "2x"
+    },
+    {
+      "id": 6,
+      "Title": "Design",
+      "Poster": "https://i.pinimg.com/564x/5f/03/47/5f03478396cd382506cf9bba19030936.jpg",
+      "height": "2x"
     }
   ],
   "users": [
@@ -42,6 +54,11 @@
       "userId": 2,
       "postId": 2,
       "id": 2
+    },
+    {
+      "userId": 3,
+      "postId": 3,
+      "id": 3
     }
   ]
 }
