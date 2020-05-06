@@ -273,7 +273,7 @@ form.form-container.form-control > * {
   border-bottom-width: 1px;
   outline: none;
   padding: 50px 50px 7px 5px;
-  font-size: .7em;
+  font-size: 0.7em;
 }
 
 .modal-input:focus {
@@ -285,7 +285,7 @@ form.form-container.form-control > * {
   border-radius: 50px;
   margin: 20px 0 0 0;
   padding: 5px 50px;
-  font-size: .7rem;
+  font-size: 0.7rem;
   border: solid 2px transparent;
   background-image: linear-gradient(101deg, #89f7fe, #66a6ff);
 
@@ -340,8 +340,7 @@ form.form-container.form-control > * {
 
   .profile-folder {
     width: 300px;
-}
-
+  }
 
   .bar {
     position: absolute;
@@ -391,11 +390,11 @@ form.form-container.form-control > * {
     padding: 50px 100px 7px 5px;
     font-size: 2em;
   }
-  
+
   .modal-input:focus {
     color: red;
   }
-  
+
   .modal-btn {
     background-color: transparent;
     border-radius: 50px;
@@ -404,7 +403,7 @@ form.form-container.form-control > * {
     font-size: 1.3rem;
     border: solid 2px transparent;
     background-image: linear-gradient(101deg, #89f7fe, #66a6ff);
-  
+
     background-origin: border-box;
     box-shadow: 2px 1000px 1px white inset;
     outline: none;

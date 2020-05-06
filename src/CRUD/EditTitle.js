@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
 import axios from "axios";
 
 export default function EditTitle({ pageId }) {
@@ -32,11 +31,11 @@ export default function EditTitle({ pageId }) {
   }
 
   return (
-    <form className = "modal-form">
+    <form className="modal-form">
       <h1>Edit {page.Title}</h1>
 
       <input
-        className = "modal-input"
+        className="modal-input"
         onChange={handleInputChange}
         value={page.Title}
         type="text"
@@ -44,7 +43,7 @@ export default function EditTitle({ pageId }) {
       />
 
       <p>
-        <button className = "modal-btn" onSubmit={handleSubmit} type="submit">
+        <button className="modal-btn" onSubmit={handleSubmit} type="submit">
           Edit
         </button>
       </p>

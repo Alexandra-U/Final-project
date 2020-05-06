@@ -2,17 +2,17 @@ import React, { useState, useEffect } from "react";
 import { BrowserRouter, Route } from "react-router-dom";
 import "./App.css";
 import Header from "./Header/Header";
+
 import ShowList from "./Display/ShowList";
+import Display from "./Display/Display";
 
 import Login from "./Auth/Login";
 import Register from "./Auth/Register";
-import Display from "./Display/Display";
-
 import AuthContext from "./Auth/AuthContext";
 
 import Profile from "./Auth/Profile";
-
 import EditTitle from "./CRUD/EditTitle";
+import PageDetails from "./PageDetails/PageDetails";
 
 function App() {
   const [user, setUser] = useState(null);
@@ -48,6 +48,10 @@ function App() {
 
           <Route path="/Profile">
             <Profile />
+          </Route>
+
+          <Route path="/posts/:pageId">
+            <PageDetails />
           </Route>
 
           <Route path="/posts/:pageId">

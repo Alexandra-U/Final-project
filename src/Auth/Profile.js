@@ -31,7 +31,7 @@ function Profile() {
   return (
     <>
       {posts.map((item) => (
-        <img className = "profile-folder" src = {item.Poster} key = {item.id} />
+        <img className="profile-folder" src={item.Poster} key={item.id} />
       ))}
     </>
   );
