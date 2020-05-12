@@ -3,7 +3,7 @@ import axios from "axios";
 import AuthContext from "../Auth/AuthContext";
 
 import Modal from "react-modal";
-import EditTitle from "../CRUD/EditTitle";
+import DetailsPage from "../CRUD/DetailsPage";
 
 Modal.setAppElement("#root");
 
@@ -40,13 +40,13 @@ export default function Display({ show, onDelete }) {
               isOpen={modalIsOpen}
               onRequestClose={() => setModalIsOpen(false)}
             >
-              <EditTitle pageId={show.id} />
+              <DetailsPage pageId={show.id} />
             </Modal>
-            <button onClick={handleSave} data-image-id>
+            <button onClick={handleSave}>
               +
             </button>
             <button onClick={() => setModalIsOpen(true)}>&#9998;</button>
-            <button onDelete={deleteItem} data-item-id={show.id}>
+            <button onClick={deleteItem} data-item-id={show.id}>
               &#x2710;
             </button>
           </>

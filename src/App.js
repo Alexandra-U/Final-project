@@ -11,7 +11,7 @@ import Register from "./Auth/Register";
 import AuthContext from "./Auth/AuthContext";
 
 import Profile from "./Auth/Profile";
-import EditTitle from "./CRUD/EditTitle";
+import DetailsPage from "./CRUD/DetailsPage";
 
 function App() {
   const [user, setUser] = useState(null);
@@ -50,7 +50,7 @@ function App() {
           </Route>
 
           <Route path="/posts/:pageId">
-            <EditTitle />
+            <DetailsPage />
           </Route>
         </div>
       </BrowserRouter>

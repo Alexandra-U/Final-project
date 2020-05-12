@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 
-export default function EditTitle({ pageId }) {
+export default function DetailsPage({ pageId }) {
   const [page, setPage] = useState(null);
 
   useEffect(() => {
