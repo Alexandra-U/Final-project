@@ -70,9 +70,24 @@
   ],
   "folders": [
     {
+      "userId": 2,
+      "postId": 2,
+      "id": 1
+    },
+    {
+      "userId": 5,
+      "postId": 5,
+      "id": 2
+    },
+    {
       "userId": 1,
       "postId": 1,
-      "id": 1
+      "id": 3
+    },
+    {
+      "userId": 3,
+      "postId": 3,
+      "id": 4
     }
   ]
 }

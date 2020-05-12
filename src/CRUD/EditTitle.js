@@ -51,7 +51,7 @@ export default function EditTitle({ pageId }) {
         </button>
         </div>
 
-        <a href = {page.Poster}  download>
+        <a href = {page.Poster}>
           <img src = {page.Poster} alt = "Image poster"  /> 
           </a> 
       

@@ -30,14 +30,23 @@ function Profile() {
     setPosts(posts);
   }
 
+  function changeImage() {
+    if(document.querySelector(".profile-image").src = {profile}) {
+      document.querySelector(".profile-image").src = "https://i.pinimg.com/564x/7b/7f/b5/7b7fb54fbf3304571afae67453f882b5.jpg";
+    } else {
+      document.querySelector(".profile-image").src = {profile}
+    }
+  }
+
   return (
  
-    <>
+    <div className = "profile-container">
       {posts.map((item) => (
         <img className="profile-folder" src={item.Poster} key={item.id} />
       ))}
-      <img className="profile-image" src={profile} alt="Profile" />
-    </>
+      <div className="profile-image" onClick = {changeImage} />
+      
+    </div>
   );
 }
 

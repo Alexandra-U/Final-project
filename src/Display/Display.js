@@ -10,11 +10,12 @@ Modal.setAppElement("#root");
 export default function Display({ show, onDelete }) {
   const { user } = useContext(AuthContext);
   const [modalIsOpen, setModalIsOpen] = useState(false);
+  
 
-  async function handleSave() {
-    await axios
+  async function handleSave() {   
+     await axios
       .post("http://localhost:4000/folders/", {
-        userId: 1,
+        userId: show.id,
         postId: show.id,
       })
       .then((resp) => {
@@ -42,9 +43,9 @@ export default function Display({ show, onDelete }) {
             >
               <EditTitle pageId={show.id} />
             </Modal>
-            <button onClick={handleSave}>+</button>
+            <button onClick={handleSave} data-image-id>+</button>
             <button onClick={() => setModalIsOpen(true)}>&#9998;</button>
-            <button onClick={deleteItem} data-item-id={show.id}>
+            <button onDelete={deleteItem} data-item-id={show.id}>
             &#x2710;
             </button>
           </>

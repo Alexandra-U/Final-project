@@ -102,7 +102,7 @@ export default function Login() {
     <>
       {globalErrorMessage ? (
         <div className="alert-danger" role="alert">
-          Wrong username
+          Wrong username or password!
         </div>
       ) : null}
 
