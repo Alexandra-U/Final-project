@@ -13,7 +13,6 @@ import AuthContext from "./Auth/AuthContext";
 import Profile from "./Auth/Profile";
 import EditTitle from "./CRUD/EditTitle";
 
-
 function App() {
   const [user, setUser] = useState(null);
 
