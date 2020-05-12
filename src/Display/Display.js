@@ -45,12 +45,8 @@ export default function Display({ show, onDelete }) {
             <button onClick={handleSave}>+</button>
             <button onClick={() => setModalIsOpen(true)}>&#9998;</button>
             <button onClick={deleteItem} data-item-id={show.id}>
-              🍩
+            &#x2710;
             </button>
-            <a href="/PageDetails">
-              {" "}
-              <button>...</button>{" "}
-            </a>
           </>
         ) : null}
       </div>

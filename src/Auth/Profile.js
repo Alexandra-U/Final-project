@@ -1,10 +1,12 @@
 import React, { useEffect, useState, useContext } from "react";
 import axios from "axios";
 import AuthContext from "./AuthContext";
+import profile from "../Images/profile.png";
 
 function Profile() {
   const { user } = useContext(AuthContext);
   const [posts, setPosts] = useState([]);
+  
   useEffect(() => {
     getSaved();
   }, [user]);
@@ -29,10 +31,12 @@ function Profile() {
   }
 
   return (
+ 
     <>
       {posts.map((item) => (
         <img className="profile-folder" src={item.Poster} key={item.id} />
       ))}
+      <img className="profile-image" src={profile} alt="Profile" />
     </>
   );
 }

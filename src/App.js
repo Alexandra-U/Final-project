@@ -12,7 +12,7 @@ import AuthContext from "./Auth/AuthContext";
 
 import Profile from "./Auth/Profile";
 import EditTitle from "./CRUD/EditTitle";
-import PageDetails from "./PageDetails/PageDetails";
+
 
 function App() {
   const [user, setUser] = useState(null);
@@ -48,10 +48,6 @@ function App() {
 
           <Route path="/Profile">
             <Profile />
-          </Route>
-
-          <Route path="/posts/:pageId">
-            <PageDetails />
           </Route>
 
           <Route path="/posts/:pageId">
