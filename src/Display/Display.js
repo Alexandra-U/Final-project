@@ -14,8 +14,8 @@ export default function Display({ show, onDelete }) {
   async function handleSave() {
     await axios
       .post("http://localhost:4000/folders/", {
-        userId: show.id,
-        postId: show.id,
+        userId: user.id,
+        postId: show.id
       })
       .then((resp) => {
         console.log(resp.data);
