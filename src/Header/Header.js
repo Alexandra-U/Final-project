@@ -1,7 +1,7 @@
 import React, { useContext, useState } from "react";
 import "../App.css";
 import logo from "../Images/logo.png";
-import { Link, useHistory } from "react-router-dom";
+import { Link, useHistory, NavLink } from "react-router-dom";
 
 import AuthContext from "../Auth/AuthContext";
 
@@ -24,7 +24,7 @@ export default function Header() {
   return (
     <>
       <nav className="nav-bar">
-        <img className="logo" src={logo} alt="Logo" />
+        <NavLink exact to="/"><img className="logo" src={logo} alt="Logo" /></NavLink>
 
         <form className="search-bar">
           <input
