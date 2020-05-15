@@ -4,7 +4,7 @@ import "./App.css";
 import Header from "./Header/Header";
 
 import ShowList from "./Display/ShowList";
-import Display from "./Display/Display";
+import DisplayContent from "./Display/DisplayContent";
 
 import Login from "./Auth/Login";
 import Register from "./Auth/Register";
@@ -33,8 +33,8 @@ function App() {
             <ShowList />
           </Route>
 
-          <Route path="/Display">
-            <Display />
+          <Route path="/DisplayContent">
+            <DisplayContent />
           </Route>
 
           <Route path="/Login">

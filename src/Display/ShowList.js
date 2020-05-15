@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import Display from "./Display";
+import DisplayContent from "./DisplayContent";
 import { useLocation } from "react-router-dom";
 
 export default function ShowList() {
@@ -33,7 +33,7 @@ export default function ShowList() {
         {page
           .filter((post) => (q ? post.Title.toLowerCase().includes(q) : true))
           .map((item) => (
-            <Display show={item} onDelete={handleDelete} key={item.id} />
+            <DisplayContent show={item} onDelete={handleDelete} key={item.id} />
           ))}
       </div>
     );

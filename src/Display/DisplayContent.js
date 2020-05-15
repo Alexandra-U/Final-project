@@ -7,7 +7,7 @@ import DetailsPage from "../CRUD/DetailsPage";
 
 Modal.setAppElement("#root");
 
-export default function Display({ show, onDelete }) {
+export default function DisplayContent({ show, onDelete }) {
   const { user } = useContext(AuthContext);
   const [modalIsOpen, setModalIsOpen] = useState(false);
 

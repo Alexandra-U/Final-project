@@ -63,12 +63,46 @@
   ],
   "users": [
     {
-      "username": "a",
+      "username": "Alexandra",
       "password": "a",
       "id": 1
+    },
+    {
+      "username": "Ale",
+      "password": "a",
+      "id": 2
     }
   ],
   "folders": [
-   
+    {
+      "userId": 1,
+      "postId": 3,
+      "id": 1
+    },
+    {
+      "userId": 1,
+      "postId": 4,
+      "id": 2
+    },
+    {
+      "userId": 1,
+      "postId": 7,
+      "id": 3
+    },
+    {
+      "userId": 1,
+      "postId": 5,
+      "id": 4
+    },
+    {
+      "userId": 1,
+      "postId": 2,
+      "id": 5
+    },
+    {
+      "userId": 1,
+      "postId": 6,
+      "id": 6
+    }
   ]
 }
