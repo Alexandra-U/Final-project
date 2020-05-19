@@ -24,6 +24,7 @@ export default function Header() {
   return (
     <>
       <nav className="nav-bar">
+        
         <NavLink exact to="/"><img className="logo" src={logo} alt="Logo" /></NavLink>
 
         <form className="search-bar">
@@ -38,7 +39,7 @@ export default function Header() {
 
         <ul className="list">
           <li>
-            <Link className="navbar-link" to="/">
+            <Link className="navbar-link home" to="/">
               Home
             </Link>
 

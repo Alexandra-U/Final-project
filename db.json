@@ -103,6 +103,16 @@
       "userId": 1,
       "postId": 6,
       "id": 6
+    },
+    {
+      "userId": 2,
+      "postId": 1,
+      "id": 7
+    },
+    {
+      "userId": 2,
+      "postId": 5,
+      "id": 8
     }
   ]
 }

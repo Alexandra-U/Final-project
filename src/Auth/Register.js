@@ -4,22 +4,22 @@ import AuthContext from "./AuthContext";
 import { Redirect } from "react-router-dom";
 
 const errorMessages = {
-  username: "You must enter a username!",
-  password: "You must enter a password!",
+  "username": "You must enter a username!",
+  "password": "You must enter a password!",
   "retype-password": "You must retype the password!",
   "different-passwords": "You must enter the same password twice!",
 };
 
 export default function Register() {
   const [formData, setFormData] = useState({
-    username: "",
-    password: "",
+    "username": "",
+    "password": "",
     "retype-password": "",
   });
 
   const [formError, setFormError] = useState({
-    username: "",
-    password: "",
+    "username": "",
+    "password": "",
     "retype-password": "",
     "different-passwords": "",
   });

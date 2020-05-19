@@ -22,9 +22,10 @@ body {
   align-items: center;
 }
 
+
 .logo {
   width: 30px;
-  margin: 0 20px 0 20px;
+  margin: 0 10px 0 20px;
 }
 
 .search-bar {
@@ -62,7 +63,8 @@ input:focus {
 
 .list a {
   text-decoration: none;
-  padding-right: 20px;
+  padding-right: 18px;
+  padding-top: 10px;
   color: white;
 }
 
@@ -134,7 +136,7 @@ input:focus {
   border-radius: 20px;
 
   background: black url("./Images/background.png") no-repeat;
-  background-size: 125%;
+  background-size: 136%;
 }
 
 form.form-container.form-control > * {
@@ -153,7 +155,12 @@ form.form-container.form-control > * {
   color: white;
   font-size: 0.5em;
   padding: 10px 0 5px 0;
-  margin-left: 85px;
+  margin-left: 75px;
+}
+
+.invalid-feedback {
+  font-size: .4em;
+  margin-left: 75px;
 }
 
 .form-group label {
@@ -513,6 +520,7 @@ form.form-container.form-control > * {
 }
 
 @media screen and (max-width: 320px) {
+
   .nav-bar {
     background-color: transparent;
     width: 65%;
@@ -529,21 +537,25 @@ form.form-container.form-control > * {
     position: fixed;
     bottom: 0;
   }
+  
   .search-bar input {
-    width: 80px;
+    width: 40px;
     height: 25px;
+    margin-right: 10px;
   }
   
-  .navbar-link {
+  .navbar-link.home {
     display: none;
   }
   
-  .list li {
-    list-style: none;
-  }
-
   .username {
     display: none;
   }
+
+  .navbar-link.logout {
+   
+  }
+
+  
   
 }
